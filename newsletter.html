@@ -1,0 +1,93 @@
+<html>
+	<title>FreeSWFGames</title>
+	<head>
+		<body oncontextmenu="return false;">
+<script type="text/javascript"> 
+ //Disable select-text script (IE4+, NS6+)  
+ //visit http://html-generator.weebly.com/html-right-clickselect-disable.html/   
+ 
+ function disableselect(e) { 
+   return false 
+ } 
+ 
+ function reEnable() { 
+   return true 
+ } 
+ //if IE4+  
+ document.onselectstart = new Function("return false") 
+ //if NS6  
+ if (window.sidebar) { 
+   document.onmousedown = disableselect 
+   document.onclick = reEnable 
+ } 
+</script>
+  <script>
+    document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+  </script>
+    <style>
+      // <use kbd for ctrl/... buttons>
+  
+bottom:20px}sup{font-size:80%}sub{font-size:80%}kbd{padding:.1em .6em;border:1px solid #ccc;font-size:11px;font-family:Arial,Helvetica,sans-
+  
+serif;background-color:#f7f7f7;color:#333;-moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;-webkit-box-shadow:0 1px 0 
+
+  // <remove this line for shadow background>
+rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;border-radius:3px;display:inline-block;margin:0 
+  
+  .1em;text-shadow:0 1px 0 #fff;line-height:1.4;</style>
+		<script type="text/javascript" src="http://freeswfgames.github.io/title.js"></script>
+		<link rel="stylesheet" type="text/css" href="cursor.css">
+	</head>
+<!-- Begin MailChimp Signup Form -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//github.us12.list-manage.com/subscribe/post?u=db7524d6de07cd0b1b6cbd264&amp;id=6341f83e2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to FreeSWFGames newsletter</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_db7524d6de07cd0b1b6cbd264_6341f83e2a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+<form id="mc-unsubscribe-form" action="http://github.us12.list-manage1.com/unsubscribe/post" method="POST">
+  <input type="hidden" name="u" value="db7524d6de07cd0b1b6cbd264">
+  <input type="hidden" name="id" value="6341f83e2a">
+  <input class="button" type="submit" value="Unsubscribe" placeholder="Email">
+  </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+</html>

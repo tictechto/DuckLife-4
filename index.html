@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<body oncontextmenu="return false;">
+<script type="text/javascript"> 
+ //Disable select-text script (IE4+, NS6+)  
+ //visit http://html-generator.weebly.com/html-right-clickselect-disable.html/   
+ 
+ function disableselect(e) { 
+   return false 
+ } 
+ 
+ function reEnable() { 
+   return true 
+ } 
+ //if IE4+  
+ document.onselectstart = new Function("return false") 
+ //if NS6  
+ if (window.sidebar) { 
+   document.onmousedown = disableselect 
+   document.onclick = reEnable 
+ } 
+</script>
+  <script>
+    document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+  </script>
+    <style>
+      // <use kbd for ctrl/... buttons>
+  
+bottom:20px}sup{font-size:80%}sub{font-size:80%}kbd{padding:.1em .6em;border:1px solid #ccc;font-size:11px;font-family:Arial,Helvetica,sans-
+  
+serif;background-color:#f7f7f7;color:#333;-moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;-webkit-box-shadow:0 1px 0 
+
+  // <remove this line for shadow background>
+rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #FFFFFF inset;border-radius:3px;display:inline-block;margin:0 
+  
+  .1em;text-shadow:0 1px 0 #fff;line-height:1.4;</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>iPhone Unlock Screen - FreeSWFGames</title>
+<link rel="stylesheet" type="text/css" href="http://freeswfgames.github.io/slide2unlock/css/style.css"/>
+<script type="text/javascript" src="http://freeswfgames.github.io/title.js"></script>
+<script type="text/javascript" src="http://freeswfgames.github.io/slide2unlock/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="http://freeswfgames.github.io/slide2unlock/js/ui.core-1.5.3.js"></script>
+<script type="text/javascript" src="http://freeswfgames.github.io/slide2unlock/js/ui.slider.js"></script>
+<script type="text/javascript" src="http://freeswfgames.github.io/slide2unlock/js/iphone-unlock.js"></script>
+</head>
+
+<body>
+<div id="iphone-scrollcontainer">
+	<div id="iphone-inside">
+        <div id="unlock-top">
+            <p id="timepicker" class="time">08:23</p>
+            <p id="datepicker" class="date">Wednesday, July 6</p>
+        </div>
+        <div id="unlock-spacer">
+        	&nbsp;
+        </div>
+        <div id="unlock-bottom">
+        	<div id="slide-to-unlock"></div>
+        	<div id="unlock-slider-wrapper">
+        		<div id="unlock-slider"><div id="unlock-handle"></div></div>
+        	</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
